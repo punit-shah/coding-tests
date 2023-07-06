@@ -1,0 +1,44 @@
+Example
+Passed
+Input:
+arr: [3, 6, 2, 9, -1, 10]
+Expected Output:
+"Left"
+Output:
+"Left"
+
+Test Case 1
+Passed
+Input:
+arr: [1, 4, 100, 5]
+Expected Output:
+"Right"
+Output:
+"Right"
+
+Equal Branches
+Passed
+Input:
+arr: [1, 10, 5, 1, 0, 6]
+Expected Output:
+""
+Output:
+""
+
+Empty Tree
+Passed
+Input:
+arr: []
+Expected Output:
+""
+Output:
+""
+
+Only Root Node
+Passed
+Input:
+arr: [1]
+Expected Output:
+""
+Output:
+""
