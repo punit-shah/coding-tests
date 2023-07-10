@@ -1,4 +1,4 @@
-const solution = require('./solution');
+const findLargerBranch = require('./findLargerBranch');
 
 test.each`
   test                                   | input                   | expected
@@ -8,5 +8,5 @@ test.each`
   ${'Empty tree'}                        | ${[]}                   | ${''}
   ${'Only root node'}                    | ${[1]}                  | ${''}
 `('$test', ({ input, expected }) => {
-  expect(solution(input)).toBe(expected);
+  expect(findLargerBranch(input)).toBe(expected);
 });

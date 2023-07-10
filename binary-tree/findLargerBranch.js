@@ -12,7 +12,7 @@ const getBranchSize = (tree, index) => {
   return tree[index] + leftBranchSize + rightBranchSize;
 };
 
-const solution = (tree) => {
+const findLargerBranch = (tree) => {
   const leftBranch = getBranchSize(tree, 1);
   const rightBranch = getBranchSize(tree, 2);
 
@@ -21,4 +21,4 @@ const solution = (tree) => {
   return '';
 };
 
-module.exports = solution;
+module.exports = findLargerBranch;
