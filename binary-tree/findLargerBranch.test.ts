@@ -1,4 +1,4 @@
-const findLargerBranch = require('./findLargerBranch');
+import { findLargerBranch } from './findLargerBranch';
 
 test.each`
   test                                   | input                   | expected

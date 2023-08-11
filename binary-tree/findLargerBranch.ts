@@ -1,4 +1,4 @@
-const getBranchSize = (tree, index) => {
+const getBranchSize = (tree: number[], index: number): number => {
   // return 0 if node is non-existent
   if (index > tree.length - 1) return 0; // index is outside array
   if (tree[index] === -1) return 0; // node value is -1 (representing non-existent node)
@@ -12,7 +12,7 @@ const getBranchSize = (tree, index) => {
   return tree[index] + leftBranchSize + rightBranchSize;
 };
 
-const findLargerBranch = (tree) => {
+export const findLargerBranch = (tree: number[]) => {
   const leftBranch = getBranchSize(tree, 1);
   const rightBranch = getBranchSize(tree, 2);
 
@@ -20,5 +20,3 @@ const findLargerBranch = (tree) => {
   if (rightBranch > leftBranch) return 'Right';
   return '';
 };
-
-module.exports = findLargerBranch;
