@@ -1,10 +1,3 @@
-/*
- * Complete the 'sortRoman' function below.
- *
- * The function is expected to return a STRING_ARRAY.
- * The function accepts STRING_ARRAY names as parameter.
- */
-
 const romanDigitValues: { [symbol: string]: number } = {
   I: 1,
   V: 5,

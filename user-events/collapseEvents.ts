@@ -36,8 +36,9 @@ const initialCollapsedEventView: CollapsedEventView = {
 
 export function collapseEvents(events: UserEvent[]): CollapsedEventView {
   return events.reduce((collapsedEventView, currentEvent) => {
-    const type = currentEvent.type;
+    const { type } = currentEvent;
 
+    // Increment count of events of the current type
     return {
       ...collapsedEventView,
       [type]: collapsedEventView[type] + 1,
@@ -107,7 +108,7 @@ export function collapseEventsByUserId(
 
     if (isCurrentUserId || isPreviousUserId) {
       // Add current IDs to Set of matched IDs if they're not already there
-      // (Duplicates are ignored in Sets)
+      // (duplicates are ignored in a Set)
       previousUserIds.add(browser_id);
       previousUserIds.add(ip_addr);
 

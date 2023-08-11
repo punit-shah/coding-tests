@@ -2,7 +2,7 @@ import {
   EventType,
   collapseEvents,
   collapseEventsByUserId,
-} from './userEvents';
+} from './collapseEvents';
 
 describe('collapseEvents', () => {
   test('when called with a list of Events, it should output the expected Collapsed Events View', () => {
